@@ -29,10 +29,14 @@ GITHUB_URL = 'http://github.com/apatriz'
 LINKEDIN_URL = 'http://linkedin.com/in/alecgis'
 TWITTER_URL = 'https://twitter.com/alecpatrizio'
 
-STATIC_PATHS = ['images', 'extra/CNAME', ]
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
+CUSTOM_CSS = 'static/extra_style.css'
 
-THEME = '/home/apatriz/Projects/apatriz.github.io/themes/pelican-bootstrap3'
+STATIC_PATHS = ['images', 'extra/CNAME', ]
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+}
+
+THEME = '/home/apatriz/Projects/pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'slate'
 
 BANNER = 'images/chameleon.jpg'
