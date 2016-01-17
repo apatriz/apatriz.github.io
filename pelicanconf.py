@@ -20,20 +20,22 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = ()
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'http://github.com/apatriz'),
+          ('linkedin', 'http://linkedin.com/in/alecgis'),)
+GITHUB_URL = 'http://github.com/apatriz'
+LINKEDIN_URL = 'http://linkedin.com/in/alecgis'
+TWITTER_URL = 'https://twitter.com/alecpatrizio'
 
 STATIC_PATHS = ['images', 'extra/CNAME', ]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
 
-THEME = '/home/apatriz/Projects/pelican-themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'sandstone'
+THEME = '/home/apatriz/Projects/apatriz.github.io/themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'slate'
+
+BANNER = 'images/chameleon.jpg'
 
 DEFAULT_PAGINATION = False
 
