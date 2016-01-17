@@ -92,3 +92,12 @@ def gh_pages():
     rebuild()
     local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
     local("git push origin {github_pages_branch}".format(**env))
+
+
+def ghpublish(msg):
+    rebuild()
+    local("git add -A .")
+    local("git commit -m '%s'" % msg)
+    local("ghp-import -m '%s' -b master output" % msg)
+    local("git push --all")
+
