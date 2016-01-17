@@ -4,6 +4,8 @@ Category: Blog
 Tags: First
 Slug: first-post
 Author: Alec Patrizio
-Summary: The is my first blog post.
+Summary: So exciting.
 
-So exciting.
+Finally made it. After the exhaustion of learning new git skills and configuring
+Pelican and making everything just *work*-- I think i've done it. So welcome
+to my first post...<b>finally</b>.
