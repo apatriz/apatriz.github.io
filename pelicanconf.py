@@ -36,10 +36,10 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
 }
 
-THEME = '/home/apatriz/Projects/pelican-themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'slate'
+THEME = '/home/apatriz/Projects/apatriz.github.io/themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'alec'
 
-BANNER = 'images/chameleon.jpg'
+BANNER = 'images/chameleon2.jpg'
 
 DEFAULT_PAGINATION = False
 
