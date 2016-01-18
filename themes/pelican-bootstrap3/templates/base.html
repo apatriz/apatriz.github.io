@@ -147,6 +147,8 @@
     {% include 'includes/banner.html' %}
 {% elif BANNER and not BANNER_ALL_PAGES %}
     {% block banner %}{% endblock %}
+{% elif not BANNER %}
+    {% block jumbo %}{% endblock %}
 {% endif %}
 <!-- End Banner -->
 <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">

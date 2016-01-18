@@ -29,7 +29,7 @@ GITHUB_URL = 'http://github.com/apatriz'
 LINKEDIN_URL = 'http://linkedin.com/in/alecgis'
 TWITTER_URL = 'https://twitter.com/alecpatrizio'
 
-CUSTOM_CSS = 'static/extra_style.css'
+# CUSTOM_CSS = 'static/extra_style.css'
 
 STATIC_PATHS = ['images', 'extra/CNAME', ]
 EXTRA_PATH_METADATA = {
