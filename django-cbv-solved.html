@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Getting the hang of Django&#39;s class-based views I&#39;ve been working through the excellent Test Driven Development by Harry Percival for a few months, with irregularity. For the most part, the ...">
+        <meta name="keywords" content="class-based views, django, tdd">
+        <link rel="icon" href="./favicon.ico">
+
+        <title>The 24 Hour Django Problem - Alec Patrizio</title>
+
+        <!-- Stylesheets -->
+        <link href="./theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./theme/css/fonts.css" rel="stylesheet">
+        <link href="./theme/css/nest.css" rel="stylesheet">
+        <link href="./theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="./"><img class="mr20" src="./logo.svg" alt="logo">Alec Patrizio</a>
+                    </div>
+                    <div class="nav pull-right">
+                            <a  href="./pages/about-me.html">About Me</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">The 24 Hour Django Problem</h1>
+                      <p class="header-date"> <a href="./author/alec-patrizio.html">Alec Patrizio</a>, Tue 05 April 2016,  <a href="./category/blog.html">Blog</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="./tag/class-based-views.html">class-based views</a>, <a href="./tag/django.html">django</a>, <a href="./tag/tdd.html">tdd</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h3>Getting the hang of Django's class-based views</h3>
+<p>I've been working through the excellent <a href="http://chimera.labs.oreilly.com/books/1234000000754">Test Driven Development</a> by Harry Percival for a few months, with irregularity. For the most part, the learning process has been smooth, apart from some minor issues here and there -- usually my own stupid mistakes.</p>
+<p>I just completed <a href="http://chimera.labs.oreilly.com/books/1234000000754/ch14.html">Chapter 14</a>, which left off with a new deployment of the To-Do List app to the live server, with new form validation features. It was all working fantastically, until I noticed a bug that slipped through the cracks -- something that I had overlooked. Now, whether this is something that the author will cover in the next few chapters I do not know yet. But it was bugging me enough that I had to fix it myself, without the helping hand of Mr. Percival. Although he is very helpful and very quickly responded to some questions of mine via email, I would attempt this one solo. Only the testing goat would be there to hold me.</p>
+<p>So off I went, on a journey through the Django docs, Googling the wrong questions, and sifting through the quality Stack Overflow posts that only lightly touched on my question, and left me with more questions -- all fairly standard when hitting walls in self-study of programming.</p>
+<p>I finally stumbled upon a <a href="http://ccbv.co.uk/">website</a> which gave clear and easily searchable documentation on Django's class-based views (CBVs), which I had just recently figured was the problem. Don't get me wrong--the Django docs are excellent and were also very useful. This site simply laid out the source code for every method so I was easily able to find those which I thought were giving me problems, and gained insight into the inner workings of what these magical CBVs were actually doing under the hood. This, combined with the previous resources I mentioned, allowed me to fully grasp my problem, and figure out the right solution. Then it was just a matter of getting proper syntax to get Django's CBVs to do what I wanted. </p>
+<p>In hindsight, I could have did some more testing myself in the interactive shell, to explore things like the MRO (method resolution order) that might have given me insight. In any case, I feel that all this has given me a better understanding of not just CBVs, but how classes and inheritance work in Python overall. Can't complain about that.</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="./archives.html">Archives</a></li>
+                            <li><a href="./tags.html">Tags</a></li>
+                            <li><a href="./authors.html">Authors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://github.com/apatriz" target="_blank">Github</a></li>
+                            <li><a href="http://linkedin.com/in/alecgis" target="_blank">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>&copy; Alec Patrizio 2016</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
