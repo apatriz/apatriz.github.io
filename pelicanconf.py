@@ -4,11 +4,11 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Alec Patrizio'
 SITENAME = 'Alec Patrizio'
-SITEURL = 'http://blog.alecpatrizio.com'
+SITEURL = 'http://alecpatrizio.com'
 
 PATH = 'content'
 
-TIMEZONE = 'America/Detroit'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
@@ -23,23 +23,47 @@ AUTHOR_FEED_RSS = None
 LINKS = ()
 
 # Social widget
-SOCIAL = (('github', 'http://github.com/apatriz'),
-          ('linkedin', 'http://linkedin.com/in/alecgis'),)
+SOCIAL = (('Github', 'http://github.com/apatriz'),
+          ('Linkedin', 'http://linkedin.com/in/alecgis'),)
 GITHUB_URL = 'http://github.com/apatriz'
 LINKEDIN_URL = 'http://linkedin.com/in/alecgis'
 TWITTER_URL = 'https://twitter.com/alecpatrizio'
 
 # CUSTOM_CSS = 'static/extra_style.css'
 
-STATIC_PATHS = ['images', 'extra/CNAME', ]
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/favicon.ico', 'extra/logo.svg']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/logo.svg': {'path': 'logo.svg'}
 }
 
-THEME = '/home/apatriz/Projects/apatriz.github.io/themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'alec'
+THEME = 'nest'
+### Template settings ###
 
-BANNER = 'images/chameleon2.jpg'
+## Theme: pelican-bootstrap3
+# BOOTSTRAP_THEME = 'alec'
+# BANNER = 'images/chameleon2.jpg'
+
+## Theme: Nest Settings
+NEST_HEADER_IMAGES = ''
+SITESUBTITLE = u"Only This Moment"
+# index.html
+NEST_INDEX_HEAD_TITLE = u'Alec Patrizio'
+NEST_INDEX_HEADER_TITLE = u"There's Only This Moment"
+NEST_INDEX_HEADER_SUBTITLE = u'Oodalalee, oodalalee, golly what a day'
+NEST_INDEX_CONTENT_TITLE = u'Last Posts'
+# Footer
+NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
+NEST_SITEMAP_MENU = [('Archives', '/archives.html'),('Tags','/tags.html'), ('Authors','/authors.html')]
+NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
+# NEST_SITEMAP_RSS_LINK = u'RSS Feed'
+NEST_SOCIAL_COLUMN_TITLE = u'Social'
+# NEST_LINKS_COLUMN_TITLE = u'Links'
+NEST_COPYRIGHT = u'&copy; Alec Patrizio 2016'
+
+
+
 
 DEFAULT_PAGINATION = False
 
